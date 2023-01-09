@@ -1,0 +1,17 @@
+{{> header }}
+    {{> navegation }}
+    <section id="section-form">
+        {{#if message}}
+            <div class="{{type}}" id="signup-modal" style="display: none;">{{message}}<span id="close">x</span></div>
+        {{/if}}
+        <form id="form-signup" action="/signup" method="post">
+            <fieldset>
+                <input type="text" name="username" id="username" placeholder="New Username">
+            </fieldset>
+            <fieldset>
+                <input type="password" name="password" id="password" placeholder="New Password">
+            </fieldset>
+            <input id="btnCrearSignup" type="submit" value="Create">
+        </form>
+    </section>
+{{> footer }}

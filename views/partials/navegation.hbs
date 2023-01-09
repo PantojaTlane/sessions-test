@@ -1,0 +1,14 @@
+<nav id="nav-home">
+    <a href="/">Home</a>
+    <ul>
+        {{#if login}}
+            <li><a href="/login">Login</a></li>
+        {{/if}}
+        {{#if signup}}
+            <li><a href="/signup">Signup</a></li>
+        {{/if}}
+        {{#if logout}}
+            <li><a href="/logout">Logout</a></li>
+        {{/if}}
+    </ul>
+</nav>

@@ -1,0 +1,32 @@
+#main-hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imgs/hero-main.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*Barra de navegacion*/
+#nav-home{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: rgb(40, 41, 54);
+}
+#nav-home ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+#nav-home ul li:first-child{
+    margin-right: 2rem;
+}
+#nav-home a{
+    text-decoration: none;
+    color: white;
+}

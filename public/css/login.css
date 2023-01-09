@@ -1,0 +1,44 @@
+
+#form-login{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #f1f1f1;
+}
+#form-login fieldset{
+    margin-bottom: 1rem;
+}
+#form-login fieldset input{
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: #b4b4b4;
+}
+#form-login fieldset input::placeholder{
+    color: #b4b4b4;
+}
+#btnCrearLogin{
+    font-size: 0.8rem;
+    border: none;
+    background-color: rgb(113, 132, 238);
+    color: white;
+    border-radius: 0.2rem;
+    float: right;
+    padding: 0.1rem 0.6rem;
+    transition: all ease-in 0.3s;
+}
+#btnCrearLogin:hover{
+    background-color: rgb(78, 88, 143);   
+}
+
+
+.error{
+    display: block !important;
+    position: absolute;
+    top: 0;
+    margin-top: 2rem;
+    background-color: #f9f9f9;
+    color: #a3afb7;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+}

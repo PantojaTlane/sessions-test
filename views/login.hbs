@@ -1,0 +1,15 @@
+{{> header }}
+    {{> navegation }}
+    <section id="section-form">
+        <div class="{{type}}" id="login-modal" style="display: none;">{{message}}<span id="close">x</span></div>
+        <form id="form-login" action="/login" method="post">
+            <fieldset>
+                <input type="text" name="username" id="username" placeholder="Username">
+            </fieldset>
+            <fieldset>
+                <input type="password" name="password" id="password" placeholder="Password">
+            </fieldset>
+            <input id="btnCrearLogin" type="submit" value="Enter">
+        </form>
+    </section>
+{{> footer }}
