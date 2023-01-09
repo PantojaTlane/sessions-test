@@ -11,11 +11,10 @@ const port = process.env.PORT || 3000;
 //Middlewares
 app.use(express.urlencoded({extended: false}))
 const optionsMySQL = {
-    host: 'localhost',
-    port: 3308,
-    user: 'root',
-    password: '',
-    database: 'sessions_test'
+    host: 'us-cdbr-east-06.cleardb.net',
+    user: 'b42d0c9073ac7b',
+    password: '5732261d',
+    database: 'heroku_346c8b8f154ebef'
 };
 const sessionStore = new MySQLStore(optionsMySQL);
 app.use(session({
