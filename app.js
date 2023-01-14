@@ -11,10 +11,13 @@ const port = process.env.PORT || 3000;
 //Middlewares
 app.use(express.urlencoded({extended: false}))
 const optionsMySQL = {
-    host: 'us-cdbr-east-06.cleardb.net',
-    user: 'b42d0c9073ac7b',
-    password: '5732261d',
-    database: 'heroku_346c8b8f154ebef'
+    host: 'us-east.connect.psdb.cloud',
+    user: 'xqci0closrn3q72vw94h',
+    password: 'pscale_pw_yoyBoLQqdLaN2SJ9lPr5h5qXihrSVX7yJSF6DQQPc8o',
+    database: 'usuarios',
+    ssl: {
+        rejectUnauthorized: false
+    }
 };
 const sessionStore = new MySQLStore(optionsMySQL);
 app.use(session({

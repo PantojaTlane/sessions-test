@@ -4,12 +4,14 @@ const dbConnection = async() => {
 
     try {
         const connection = await mysql.createConnection({
-            host: 'us-cdbr-east-06.cleardb.net',
-            user: 'b42d0c9073ac7b',
-            password: '5732261d',
-            database: 'heroku_346c8b8f154ebef'
+            host: 'us-east.connect.psdb.cloud',
+            user: 'xqci0closrn3q72vw94h',
+            password: 'pscale_pw_yoyBoLQqdLaN2SJ9lPr5h5qXihrSVX7yJSF6DQQPc8o',
+            database: 'usuarios',
+            ssl: {
+                rejectUnauthorized: false
+            }
         });   
-        
         return connection;
 
     } catch (error) {
